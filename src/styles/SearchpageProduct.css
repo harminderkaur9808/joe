@@ -1,0 +1,205 @@
+/* Container for thse product section */
+.products {
+  color: black;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  gap: 20px; /* Space between the product boxes */
+  padding: 0 10px; /* Padding on the sides */
+}
+
+/* Individual product box */
+.product-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-sizing: border-box;
+  align-items: center;
+}
+/* Section for the product image */
+.product-image {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Section for product details */
+.product-details {
+  padding: 16px;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+/* Section for product actions (buttons) */
+.product-actions {
+  margin-top: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the price and original price */
+.div-text-addcart text {
+  text-decoration: line-through;
+  color: #5C5D5E;
+}
+
+/* Adjust other styles as needed to fit the layout */
+.product-name {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.product-rating {
+  color: black;
+  font-weight: bold;
+}
+
+.product-rating span {
+  position: relative;
+  left: 20%;
+  color: red;
+}
+
+.product-replaces-part-number {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-replaces-part-number span {
+  color: #929393;
+  font-weight: 400;
+}
+
+.product-engin-details {
+  color: black;
+  font-weight: 800;
+}
+
+.product-engin-details span {
+  color: #929393;
+  font-weight: 400;
+}
+
+.Main-thir12 {
+  display: flex;
+  align-items: center;
+}
+
+.main1-first12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 13px;
+}
+
+.main1-first12 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main1-first13 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+.main1-first13 text {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  right: 11px;
+  font-weight: 700;
+}
+
+.main1-first14 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main1-first14 a {
+  color: #001dff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Counter section styling */
+#Main-counterpage {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px; /* Align with product box padding */
+  margin-top: 20px; /* Space from product list */
+}
+
+/* Pagination controls */
+.pagination-controls button {
+  width: 30px;
+  border: 1px #D9D9D9 solid;
+  margin: 2px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.pagination-controls button.active {
+  border-color: blue;
+  background-color: #e6f7ff;
+}
+
+.pagination-controls button:hover {
+  border-color: #99c2ff;
+  background-color: #f0f8ff;
+}
+
+/* Product carousel section */
+.Product-crausal-sec1 {
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+/* Hide scrollbars */
+.sidebar::-webkit-scrollbar,
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  scrollbar-width: none;
+}
+
+.products {
+  scrollbar-width: none;
+}
+
+/* Ensure the sidebar sticks at its end */
+.sidebar {
+  position: relative;
+  overflow-y: scroll;
+  max-height: 130vh;
+  position: sticky;
+  top: 0px;
+}
+
+.products {
+  flex-grow: 1;
+  max-height: 1000vh;
+  overflow-y: auto;
+}

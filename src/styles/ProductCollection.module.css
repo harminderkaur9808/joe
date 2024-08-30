@@ -1,0 +1,198 @@
+/* styles/ProductCarousel.module.css */
+.productItem {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .discountBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #DD1D23;
+    color: white;
+    /* padding: 2px 10px; */
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #DA3B1F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 12px; */
+    font-family: 'FuturaPTNormal';
+  }
+  .discount_head {
+    padding: 0px 10px;
+    font-family: '';
+  }
+  .discount_value {
+    background: #DA3B1F;
+    color: #fff;
+    padding: 0px 5px;
+  }
+  
+  .img-sec img {
+    max-width: 100%;
+  }
+  
+  .addToCartButton {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #E6E7E8;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'FuturaPTMedium';
+    font-size: 15px;
+  }
+  .addToCartButton:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .Carousel-sec {
+    margin: 20px 0;
+  }
+  
+  .Carousel-head h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #F66849 0%, #BC0B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  .priceSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .salePrice {
+    font-size: 14px;
+    color: #DA3B1F; /* Sale price color */
+    font-weight: bold;
+    font-family: 'FuturaPTHeavy';
+  }
+  
+  .regularPrice {
+    font-size: 12px;
+    color: rgba(0,0,0,.5); /* Regular price color */
+    text-decoration: line-through;
+  }
+  .ratingSection {
+    min-height: 24px; /* Set a minimum height for the rating section */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /******************************** New css Second Product carousel css ****************************/
+  
+  .carouselContainer {
+    position: relative;
+  }
+  
+  .arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  .productCard {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .productName {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  .starRating {
+    color: #f4c150; /* Gold star color */
+    font-size: 14px;
+  }
+  
+  .priceContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .regularPrice {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .salePrice {
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+    text-decoration: line-through;
+  }
+  
+  .viewDetailButton {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #DA3B1F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  .carouselWrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: white;
+    border-radius: 0; /* Make the border square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure arrows are above the carousel */
+  }
+  
+  .leftArrow {
+    left: 0px; /* Position it outside the carousel container */
+  }
+  
+  .rightArrow {
+    right: 0px; /* Position it outside the carousel container */
+  }

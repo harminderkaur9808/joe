@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* privacy policy */
+.Layout_container__99xAx {
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+}
+.page_topBox__o5eks {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('/Privacy Policy/privacy policy img.png'); /* Check the image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 400px; 
+}
+section.maxWidthContainer.marginContainer.pr {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px !important;
+}
+
+.PageContent_pageContent__HweSD.PageContent_notReContent__FWbhQ {
+  background-color: white;
+  padding: 40px;
+}
+.page_main__O5LTB {
+  max-width: 1300px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Privacy section */
+h1.Privacy-Policy_mainTitle {
+  font-size: 50px;
+  color: black;
+  font-family: 'FuturaPTMedium';
+}
+section.Privacy-Policy_section p {
+  font-size: 18px !important;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+/* Personal insformation sec */
+h2.Personal-Information_heading {
+  font-size: 45px;
+  color: black;
+  font-family: 'FuturaPTMedium';
+}
+.YourPersonal_Information_section p {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+
+h1.YourPersonal_Information_heading {
+  font-size: 30px;
+  color: black;
+  font-family: 'FuturaPTMedium';
+}
+
+/*  your choices sec3*/
+h1.Your-Choices_heading{
+  font-size: 30px;
+  color: black;
+  font-family: 'FuturaPTMedium';
+}
+section.Your.Choices_section p {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+/*notice to caifornia  */
+section.Notice-To-California-Residents_section p {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+h1.Notice-To-California-Residents_heading {
+  font-size: 30px;
+  font-family: 'FuturaPTMedium';
+  color: black;
+}
+
+h2.Mobile-Applications_Heading{
+  font-size: 30px;
+  color: black;
+  font-family: 'FuturaPTMedium'; 
+}
+h2.Security-Practices_Heading{
+  font-size: 30px;
+  color: black;
+  font-family: 'FuturaPTMedium'; 
+}
+/* cookie notice sec */
+section.Cookie_Notice_section p {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+h2.cookies_and_similar-tracking_technologies_Heading {
+  font-size: 30px;
+  color: #000;
+  font-family: 'FuturaPTMedium';
+}
+/* your choices section */
+section.Your-Choices_section p {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #262728;
+}
+/* table */
+/* Container Styling */
+.table-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+}
+/* Table Styling */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial, sans-serif';
+  border: 2px solid black; 
+}
+
+/* Header Row Styling */
+.table-container th,
+.table-container td {
+  padding: 15px 20px; 
+  border: 1px solid #D9D9D9; 
+  text-align: left;
+  min-height: 60px; 
+  vertical-align: middle; 
+}
+.table-container .MemberRulePage_black_Bg_Tr__QWRcu {
+  background-color: #f4f4f4; 
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid #000; 
+}
+
+/* Table Rows Styling */
+.table-container tr:nth-child(even) {
+  background-color: #F9F9F9; 
+}
+
+
+.table-container td:nth-child(1) {
+  width: 20%;
+}
+
+.table-container td:nth-child(2) {
+  width: 25%; 
+}
+
+.table-container td:nth-child(3) {
+  width: 20%; 
+}
+
+.table-container td:nth-child(4) {
+  width: 20%;
+}
+/* About premium sec */
+.About_Example_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.About_Example_main {
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/Privacy Policy/About example.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.About_Example_Content {
+  width: 100%;
+  text-align: center;
+  color: #cbccca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+.About_Example_title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family:'FuturaPTMedium';
+  color: #fff;
+}
+.About_Example_value {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'FuturaPTNormal';
+
+}
+.About_Example_btnBox {
+  display: flex;
+  justify-content: center;
+}
+.About_Example_ourBtn {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: 'FuturaPTNormal';
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+/* Responsive Styling for Mobile */
+@media screen and (max-width: 767px) {
+  .table-container table,
+  .table-container thead,
+  .table-container tbody,
+  .table-container th,
+  .table-container td,
+  .table-container tr {
+    display: block;
+  }
+
+  .table-container tr {
+    margin-bottom: 15px;
+  }
+
+  .table-container td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table-container td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .table-container th {
+    display: none;
+  }
+
+  .table-container td {
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+  }
+}
+
+/* Responsive Styling for Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .table-container td:nth-child(1) {
+    width: 30%;
+  }
+
+  .table-container td:nth-child(2) {
+    width: 40%;
+  }
+
+  .table-container td:nth-child(3) {
+    width: 30%;
+  }
+
+  .table-container td:nth-child(4) {
+    width: 100%;
+  }
+}
+
+  @media only screen and (max-width: 767px) {
+    .table-container table, .table-container thead,
+     .table-container tbody, 
+     .table-container th,
+      .table-container td, 
+      .table-container tr {
+        font-size: 13px;
+    }
+    section.Your-Choices_section p {
+      font-size: 15px;
+      font-family: 'FuturaPTNormal';
+      color: #262728;
+  }
+
+  .table-container td:nth-child(1) {
+    width: 100%;
+}
+ 
+  .table-container td:nth-child(2) {
+    width: 100% !important;
+  }
+
+  .table-container td:nth-child(3) {
+    width: 100%;
+  }
+
+  .table-container td:nth-child(4) {
+    width: 100%;
+  }
+  
+}
+  
+
+
+
+

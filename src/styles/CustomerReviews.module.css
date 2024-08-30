@@ -1,0 +1,333 @@
+.reviewsMainSec {
+    background: url(/images/review-bg.png);
+    width: 100%;
+    height: 700px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviewHead h1 {
+    font-size: 32px;
+    font-family: 'FuturaPTHeavy';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.SliderWithRatingSec {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+}
+
+.ReviewSlider {
+    background: #272727;
+    width: 100%;
+    padding: 30px 31px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 2px solid #ddd; */
+}
+
+.GooglePage {
+    background: #fff;
+    color: #000;
+    width: 43%;
+    padding: 30px 40px;
+}
+
+.RatingStars {
+    display: inline-block;
+    font-size: 24px;
+    color: #F0F0F0;
+}
+
+.RatingStars .filled {
+    color: #E04F30;
+}
+
+.googleRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.RatingNo, .ReviewText {
+    margin-left: 5px;
+}
+
+.reviewSlide {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.5s, transform 0.5s;
+    min-width: 33.33%; /* Show 3 slides at a time */
+    box-sizing: border-box;
+    flex: 0 0 33.33%; /* Ensure each slide takes up 33.33% width */
+    position: relative;
+    left: -18px;
+}
+
+.reviewSlide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1; /* Ensure active slide is on top */
+ 
+    transform: scaleX(1.5) scaleY(1.2);
+}
+
+.reviewSlide .reviewImage {
+    max-width: 90%;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 110px;
+}
+
+.reviewSlide .reviewTitle {
+    font-size: 17px;
+    margin: 10px 0;
+    text-align: left;
+    font-family: 'FuturaPTHeavy';
+    letter-spacing: -1px ! IMPORTANT;
+    position: relative;
+    top: -211px;
+    padding-left: 62px;
+    left: 14px;
+    line-height: 1;
+}
+
+.reviewSlide .reviewDescription {
+    font-size: 13px;
+    margin: 10px 0;
+    font-family: 'FuturaPTMedium';
+    text-align: left;
+    position: relative;
+    top: -216px;
+    padding-left: 49px;
+    left: 30px;
+    letter-spacing: -1px;
+    padding-right: 19px;
+    color: #666666;
+}
+
+.reviewSlide .reviewDate {
+    font-size: 11px;
+    color: #999;
+    position: relative;
+    top: -229px;
+    left: 40px;
+}
+
+.reviewSlide .reviewRating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    flex-direction: row-reverse;
+    width: 45px;
+    float: right;
+    position: relative;
+    top: -266px;
+    
+
+}
+
+.reviewSlide .ReviewRatingNumber {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 510px;
+    padding-top: 30px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.slides{
+    transform: translateX(-66.5%);
+}
+.ReviewSlider h2 {
+    font-size: 24px;
+    font-family: 'FuturaPTHeavy';
+}
+.googleRating .reviewCounts {
+    color: #4D9BF5;
+}
+span.filled {
+    color: #E04F30;
+}
+.ReviewText {
+    font-size: 16px;
+    color: #fff;
+}
+.RatingNo {
+    font-size: 28px;
+    font-family: 'FuturaPTHeavy';
+}
+.GooglePage h2 {
+    font-size: 24px;
+    font-family: 'FuturaPTHeavy';
+}
+.StarRating {
+    display: flex;
+    padding-right: 10px;
+}
+.GooglePage .googleRating {
+    display: block;
+}
+.GooglePage .ReviewText {
+    display: inline-flex;
+    column-gap: 15px;
+    color: #666666;
+}
+.LinkSec {
+    background-color: #f5f5f5;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.LinkSec button {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 25px;
+}
+
+
+
+/* ///////--New--- */
+
+
+/* components/Slider.module.css */
+
+  
+.CustomerReviews_slides__JZRjW {
+    position: relative;
+    left: 296px;
+    height: 215px;
+}
+
+.CustomerReviews_reviewSlide__AzxPC.CustomerReviews_active__mN8rs {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+     transform: scaleX(1.5) !important;
+}
+
+/* ///// */
+
+
+.RatingStars {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .filledStar {
+    color: #E04F30; /* Color for filled stars */
+  }
+  
+  .halfStar {
+    color: #E04F30; /* Color for half stars */
+  }
+  
+  .emptyStar {
+    color: lightgray; /* Color for empty stars */
+  }
+  
+  .StarRating img {
+    width: 16px; /* Adjust size as needed */
+    height: 16px;
+  }
+  
+  .additionalReviewImage {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  
+  .additionalReviewImage2 {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  
+  img.CustomerReviews_reviewImage2__n5tCh {
+    width: 50px !important;
+}
+
+.CustomerReviews_reviewSlide__AzxPC {
+    top: -155px;
+    position: relative;
+}
+
+img.rgtar {
+    width: 38px;
+    height: 52px;
+}
+
+.dots {
+    text-align: center;
+    /* margin-top: 15px; */
+    position: relative;
+    top: -210px;
+  }
+  
+  .dot {
+    height: 6px;
+    width: 23px;
+    margin: 0 2px;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    margin-left: 10px;
+  }
+  
+  .activeDot {
+    background-color: #DA3B1F;
+  }
+  
+

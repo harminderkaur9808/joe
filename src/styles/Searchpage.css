@@ -1,0 +1,1228 @@
+/* src/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* first feature section */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'FuturaPTNormal';
+  src: url('/fonts/Futura PT Web-normal-400-100.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTMedium';
+  src: url('/fonts/Futura PT Web Medium-normal-500-100.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTHeavy';
+  src: url('/fonts/FuturePTHeavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.filter-option input {
+  border: 1px solid red;
+  padding: 0.5rem; /* Optional: adds padding inside the input for better appearance */
+  border-radius: 4px; /* Optional: adds rounded corners to the border */
+  font-family: 'Futura PT', sans-serif; /* Optional: uses a specific font-family for consistency */
+  color: black; /* Optional: sets text color inside the input */
+}
+
+body {
+  font-family: 'FuturaPTMedium';
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.First-sections-m{
+  margin-top: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+
+}
+/* Container for the feature section */
+.feature-section {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  /* width: 75%; */
+  max-width: 1300px;
+}
+
+/* Individual feature item */
+.feature-item {
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Vertically align icon and text */
+}
+
+/* Icon image styling */
+.feature-icon-vehicle {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  padding: 2px;
+  margin-left: 17px;
+  border-radius: 30px;
+}
+/* Text styling */
+.feature-text {
+  font-size: 18px; /* Font size */
+  margin: 0; /* Remove default margins */
+}
+/*  second section main */
+/* Section container */
+.second-main-s-m1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 75%; */
+  max-width: 1300px;
+  margin:auto;
+  /* height: 60px; */
+  background-color: #EEEEEE;
+  color: black;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  /* top: 12px; */
+  font-size: 20px;
+  padding: 10px;
+}
+/* Text container */
+.text-container {
+  flex: 1;
+}
+
+/* Button styling */
+.add-vehicle-button {
+  display: flex;
+  align-items: center;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 25px;
+}
+/* Button image */
+.button-image {
+  width: 26px;
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 8px; /* Space between image and text */
+}
+
+/* Container for the search page */
+
+/* Sidebar for categories */
+.sidebar {
+  width: 40%;
+  color: black;
+  background-color: #ffffff;
+}
+.Main-search-page{
+  background-color: #ffffff;
+}
+
+
+/* img */
+/* img.main-logo {
+  width: 25px;
+  height: 18px;
+} */
+.categories {
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  height: 45px;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: #262728;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin: auto;
+  position: relative;
+  left: 10px;
+}
+
+/* Individual category */
+.category {
+  margin-bottom: 10px;
+}
+
+/* Dropdown button */
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #262728;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ddd;}
+
+/* Dropdown menu */
+.dropdown-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hide menu initially */
+}
+
+/* Show dropdown menu on button click */
+/* .dropdown-button:hover + .dropdown-menu {
+  display: block;
+} */
+
+/* Filter section */
+.filters {
+  margin-top: 20px;
+  color: black;
+}
+
+.filter-option{
+  
+}
+.filter-category {
+  /* margin-bottom: 20px; */
+  margin-left: auto;
+  width: 87%;
+  position: relative;
+  left: 30px;
+  /* background: beige; */
+}
+.filter-option-text{
+
+}
+.filter-option-text {
+  text-align: left;
+  width: 72%;
+  font-size: 14px;
+}
+
+
+/* **************************** */
+/* main section under the product */
+.Main-thir12 {
+  display: flex;
+  align-items: center;
+
+}
+.main1-first12 {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 13px;
+}
+
+.main1-first12 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main1-first13 {
+  /* flex: 4; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 0 20px; */
+  color: black;
+}
+
+.main1-first13 text {
+  position: relative;
+  display: block;
+  /* margin-bottom: 5px; */
+  font-size: 14px;
+  right: 11px;
+  font-weight: 700;
+}
+.main1-first14 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main1-first14 a {
+  /* display: inline-block; */
+  /* padding: 10px 20px; */
+  color: red;
+  color: #001dff;
+  text-decoration: none;
+  border-radius: 4px;
+  /* font-weight: bold; */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Section for product details */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+ 
+}
+section.main1-first13 text span {
+  color: #5C5D5E;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* animated */
+.filter-category {
+  margin-bottom: 20px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-icon {
+  margin-left: 10px;
+}
+
+.category-options {
+  display: block;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.category-options.visible {
+  max-height: 0;
+
+}
+
+.category-options:not(.visible) {
+
+  max-height: 1000px; /* Adjust as needed */
+
+}
+
+.filter-option {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76%;
+  height: 39px;
+  font-size: 16px;
+  color: #262728;
+  cursor: pointer;
+  border-radius: 4px;}
+
+.input-group-Main {
+  margin: 10px 0;
+}
+
+.input-group{
+
+}
+
+/* Default styling for the input field */
+.input-group {
+  border: 1px solid #ccc; /* Default border color and width */
+  padding: 8px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional: for rounded corners */
+  transition: border-color 0.3s ease, border-width 0.3s ease; /* Smooth transition for border color and width */
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76%;
+  height: 34px;
+  font-size: 16px;
+  color: #262728;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.icon-image0011 {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  cursor: pointer; /* Pointer cursor to indicate clickable items */
+}
+
+.input-group:focus {
+  border-color: blue; /* Keep border color blue on focus */
+  border-width: 2px; /* Keep border width on focus */
+  outline: none; /* Remove the default outline */
+}
+/* Styling for the input field on hover */
+.input-group:hover {
+  border-color: blue; /* Change border color on hover */
+  border-width: 2px; /* Change border width on hover */
+}
+
+
+
+.category-header {
+  width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.category-header h3 {
+  font-size: 16px;
+  font-weight: 800;
+}
+.main-logoplusminu{
+ 
+    width: 17px;
+}
+ /* help guide home */
+ .guide-section {
+  background-image: url('/Home Images/Help guide img.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 20px; 
+  }
+  
+  .guide-wrapper {
+  max-width: 1300px; 
+  margin: 0 auto;
+  padding: 0 20px; 
+  }
+  
+  .guide-main-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+  .guide-column {
+  flex: 1;
+  min-width: 300px; 
+  }
+  
+  .chat-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 300px; 
+  }
+  .guide-item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  }
+  
+  .guide-content, .guide-info {
+  margin-bottom: 10px;
+  }
+  
+  .guide-title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 600;
+  }
+  
+  .guide-desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #000;
+  }
+  
+  .guide-button {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  }
+  
+  .guide-item.align-center {
+  padding-top: 40px;
+  }
+  
+  .btn-guide {
+  padding: 10px 100px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .btn-chat{
+  padding: 10px 80px;
+  background: #DA3B1F;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  }
+  
+  .btn-guide:hover {
+  background-color: #fff;
+  color: #da3b1f;
+  border:1px solid #da3b1f;
+  
+  }
+  
+  .btn-chat:hover{
+  background-color: #DD1D23;
+  
+  }
+  .align-center {
+  text-align: center;
+  }
+  .guide-icon-img {
+  width: 40px; 
+  height: 35px; 
+  display: block;
+  margin: 0 auto;
+  }
+
+  /*  Scrollview left and right */
+
+  /* Hide scrollbars */
+.sidebar::-webkit-scrollbar,
+.products::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* For Firefox */
+.sidebar {
+  scrollbar-width: none; /* Hide scrollbars in Firefox */
+}
+
+
+
+/* Ensure the sidebar sticks at its end */
+.sidebar {
+  position: relative; /* Stick to the viewport */
+}
+.sidebar {
+  overflow-y: scroll;
+  max-height: 130vh;
+  position: sticky;
+  top: 0px;
+
+}
+
+
+.container {
+  display: flex;
+}
+
+
+         /* counter section edit   */
+
+section#Main-counterpage {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.Main-counterpage-1 {
+  /* padding: 6px; */
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.pagination-controls button {
+  width: 30px;
+  border: 1px #D9D9D9 solid;
+  margin: 2px;
+  margin-top: 12px;
+  margin-bottom: 13px;
+  height: 30px;
+  background-color: white; /* Optional: Ensure background color is white for better contrast */
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border and background color */
+}
+
+.pagination-controls button.active {
+  border-color: blue; /* Blue border for the selected button */
+  background-color: #e6f7ff; /* Light blue background for the selected button */
+}
+
+.pagination-controls button:hover {
+  border-color: #99c2ff; /* Light blue border on hover */
+  background-color: #f0f8ff; /* Very light blue background on hover */
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  padding-left: 20px !important;
+  position: relative;
+}
+
+.buttontotal01-main{
+  /* position: relative; */
+  margin-left: 24px;
+}
+
+/* product first section counter  */
+.items-display-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd; /* Optional for better visibility */
+}
+
+.items-display-left-section {
+  display: flex;
+  align-items: center;
+}
+/*  */
+
+.items-display-items-button:hover {
+  background-color: #e0e0e0;
+}
+
+.items-display-right-section {
+  display: flex;
+  align-items: center;
+}
+
+.items-display-dropdown {
+  border: 1px #d9d1d1 solid;
+  margin-right: 10px;
+  padding: 9px;
+  border-radius: 4px;
+  color: #000000eb;
+}
+
+.items-display-icon-image {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+section.items-display-section-01 {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: black;
+}
+.Main-Container-products{
+    width: 100%;
+
+}
+.Main-Layout-box-G{
+  display: flex;
+}
+
+img.icon-image0011 {
+  padding-left: 15px;
+}
+
+.Items-displaybutton-changelayout button:nth-of-type(2), .Items-displaybutton-changelayout button:nth-of-type(3) {
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.Product-crausal-sec1 {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  padding-left: 10px;
+  
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgb(0 0 0 / 50%);
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+/* dropdown-open */
+/* Sidebar container */
+/* Sidebar container */
+.sidebar-Products01 {
+  position: relative;
+}
+
+img.main-logo-dojt {
+  width: 28px;
+}
+
+/* Categories header */
+.categories001 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #262728;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin: auto;
+  position: relative;
+  left: 10px;
+  background-color: #fff; /* Ensure background color matches */
+}
+.categories001:hover{
+  background-color: #b32810;
+  color: white;
+}
+/* Product and sub-product icons */
+.product-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Dropdown container */
+.dropdown-container-main {
+  position: absolute;
+  top: 100%;
+  left: 19.2%; /* Align to the left of the container */
+  width: 66%; /* Full width of the sidebar */
+  max-height: 360px; /* Adjust height as needed */
+  overflow: hidden; /* Hide scrollbar */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000; /* Ensure dropdown is on top of other elements */
+}
+
+/* Dropdown header */
+.dropdown-header-active {
+  padding: 10px;
+  font-size: 14px;
+  color: #262728;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  /* margin-left: 8px; */
+}
+.dropdown-header-active span {
+  margin-left: 10px;
+}
+/* Indicator */
+.dropdown-indicator {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Indicator open/close states */
+.dropdown-indicator.open {
+  color: #262728; /* Adjust color if needed */
+}
+
+.dropdown-indicator.closed {
+  color: #999; /* Adjust color if needed */
+}
+
+/* Hover state for dropdown header */
+.dropdown-header-active:hover {
+  color: #000000; 
+}
+.dropdown-header-active span:nth-of-type(2):hover {
+  text-decoration: underline;
+}
+/* Dropdown content */
+.dropdown-content-001 {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: transparent;
+}
+/* Hide scrollbar for dropdown content */
+.dropdown-content-001::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
+
+/* Dropdown item */
+.dropdown-item-c12 {
+  /* padding: 10px; */
+  /* font-size: 16px; */
+  color: #262728;
+  cursor: pointer;
+  margin-left: 14px;
+  background-color: transparent;
+}
+
+/* Hover state for dropdown item */
+.dropdown-item-c12:hover {
+  color: #000000; /* Slightly lighter background on hover */
+}
+
+/* Ensure the last item does not have a bottom border */
+.dropdown-content-001 .dropdown-item-c12:last-child {
+  border-bottom: none;
+}
+
+/* Sub-dropdown content */
+.dropdown-subcontent-001 {
+  font-size: 12px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dddddd26;
+}
+
+/* Sub-dropdown item */
+.dropdown-subitem-c12 {
+  margin-left: 12px;
+  padding: 4px;
+  font-size: 13px;
+  color: #262728;
+  cursor: pointer;
+  /* border-bottom: 1px solid #ddd; */
+  display: flex;
+  align-items: center;
+  background-color: #dddddd26;
+}
+span.dropdown-indicator.closed {
+  size: 10px;
+  font-size: 14px;
+}
+span.dropdown-indicator.open {
+  size: 10px;
+  font-size: 14px;
+}
+/* Hover state for sub-dropdown item */
+.dropdown-subitem-c12:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the last sub-item does not have a bottom border */
+.dropdown-subcontent-001 .dropdown-subitem-c12:last-child {
+  border-bottom: none;
+}
+
+
+.items-display-items-button.active {
+  background-color: #000; /* Black background for active button */
+  color: #fff; /* White text color for active button */
+}
+/* Target the first button */
+.items-display-buttons-container .items-display-button:nth-of-type(1):hover {
+  color: white;
+  background-color: black;
+  
+  
+}
+
+.Items-displaybutton-changelayout button:nth-of-type(1) {
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+/* ********************* */
+.price-filter-container {
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-group-price {
+  display: flex;
+  width: 100%;
+  max-width: 400px; /* Optional: set a max-width for better responsiveness */
+  gap: 1rem; /* Space between inputs and button */
+  margin-bottom: 1rem;
+}
+
+.input-group-price input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Futura PT', sans-serif;
+  color: black;
+}
+
+.input-group-price input::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+.go-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  width: 20%; /* Adjust width to fit your layout */
+}
+
+.go-button:hover {
+  background-color: darkred;
+}
+.input-group-price input:hover,
+.input-group-price input:focus {
+  border-color: blue; /* Border color on hover and focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.sidebar-buttons {
+  display: none;
+}
+.right-sidebar {
+  display: none;
+}
+@media (max-width: 1024px){
+  .items-display-left-section {
+    display: flex;
+    align-items: center;
+    margin-left: 65px !important;
+  }
+  /*-------------------- Sidebar content button css -------------------*/
+  .category-show {
+    width: 50%;
+}
+.right-sidebar {
+  display: block;
+}
+.filter-show {
+    width: 50%;
+}
+.sidebar-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    column-gap: 16px;
+}
+button.sideshow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+.filter-show button.sideshow-btn {
+  border: 1px solid black;
+}
+.category-show button.sideshow-btn {
+  background: #b32810 !important;
+  color: #fff;
+  border: 1px solid #b32810;
+}
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 330px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  /* padding: 20px; */
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+  z-index: 1001;
+}
+.sidebar-header-Tab p {
+    font-size: 14px;
+    font-family: 'FuturaPTNormal' !important;
+    color: #5c5d5e;
+}
+.right-sidebar.visible {
+  transform: translateX(0);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.sidebar-header-Tab p {
+  font-size: 14px;
+  font-family: 'FuturaPTNormal' !important;
+  color: #5c5d5e;
+}
+.sidebar-header-Tab h3 {
+  font-size: 18px;
+  font-family: 'FuturaPTHeavy' !important;
+  height: 24px;
+  line-height: 24px;
+}
+.sidebar-header-Tab {
+  border-bottom: 1px solid #ebeced;
+  padding-bottom: 20px;
+  margin: 17px 16px 0px 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.side-cate {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  padding: 10px 16px;
+}
+.subcategory-item {
+  padding-left: 18px;
+}
+.sub-cate {
+  display: flex;
+  column-gap: 10px;
+  padding: 10px 20px;
+}
+ul.subcategory-list {
+  margin-block-start: 0;
+}
+button.subcategory-button {
+  text-align: left;
+  font-size: 14px;
+  font-family: 'FuturaPTNormal' !important;
+  color: #5c5d5e;
+}
+ul.subcategory-list li {
+  font-size: 14px;
+  font-family: 'FuturaPTNormal' !important;
+  padding: 10px 0px;
+  color: #5c5d5e;
+}
+button.category-button {
+  color: #262728;
+}
+.main-cate-div {
+  background: #FAFAFA;
+}
+.categories-content {
+  height: 560px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.sub-cate .dropdown-icons {
+  margin-top: 2px;
+}
+/*------------------------------ Filter css --------------------------------*/
+
+.selected-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.selected-filter-group ul {
+  padding-inline-start: 15px;
+}
+li.selected-option-item.active {
+  padding: 5px 10px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: 'FuturaPTMedium' !important;
+}
+
+.filter-cate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+span.filter-option-text {
+  font-size: 14px;
+  font-family: 'FuturaPTMedium' !important;
+  color: #5c5d5e;
+}
+ul.filter-options-list {
+  margin-block-start: 0;
+  padding-inline-start: 10px;
+}
+ul.filter-options-list li {
+  display: flex;
+  padding: 7px 19px;
+  justify-content: space-between;
+  align-items: center;
+}
+span.checkbox-icon {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #c6c7c8;
+  border-radius: 10px;
+}
+.default-checkbox {
+  display: inline-block;
+  margin-right: 8px;
+}
+.sort-by-checkbox {
+  display: inline-block;
+  margin-right: 8px;
+}
+.product-count {
+  margin-left: 8px;
+  color: #333;
+}
+ul.filter-options-list.filter-category {
+  width: unset;
+  left: 0px !important;
+}
+.checkbox-icon-oth {
+  display: inline-flex; 
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+}
+.checkbox-icon-oth img {
+  display: none;
+}
+.checkbox-icon-oth.active img {
+  display: inline;
+}
+span.option-count {
+  font-family: 'FuturaPTNormal' !important;
+  font-size: 12px;
+  color: #919393;
+}
+span.filter-count {
+  margin-left: 10px !important;
+  background: #da3b1f;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .input-group-price input {
+    width: 45%; /* Adjust width for tablets */
+  }
+
+  .go-button {
+    width: 30%; /* Adjust width for tablets */
+  }
+  .Product-crausal-sec1 {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group-price {
+    flex-direction: column; /* Stack inputs and button vertically on small screens */
+    gap: 0.5rem;
+  }
+
+  .input-group-price input,
+  .go-button {
+    width: 100%; /* Full width for inputs and button on small screens */
+  }
+
+}
+@media (max-width: 430px){
+
+  .product-actions {
+    margin-top: 20px;
+    flex: 1;
+    padding: 16px;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 1px solid #ddd; */
+}
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    left:50%;
+  }
+  .product-actions {
+    margin-top: 20px;
+    flex: 1;
+    padding: 16px;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 1px solid #ddd; */
+}
+
+}

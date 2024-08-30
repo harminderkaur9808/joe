@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'FuturaPTMedium';
+ background: #F5F5F5 !important;
+}
+/* Breadcrumb section */
+.Breadcrumb_navList__Em86D {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #F5F5F5;
+  margin-bottom: 20px; /* Add margin if needed */
+  max-width: 1300px;
+  margin: 0 auto; /* Center the breadcrumb container */
+  padding-top: 20px;
+}
+
+.Breadcrumb_lineTitle__OrmvR {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.Breadcrumb_link__DV2I4 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.Breadcrumb_link__DV2I4:hover {
+  text-decoration: underline; /* Add hover effect if needed */
+}
+
+.Breadcrumb_slash__0QI0n {
+  margin: 0 5px;
+  color: #DD1D23;
+}
+
+.Breadcrumb_lastNav__YDqwS {
+  color: #DA3B1F;
+  cursor: not-allowed;
+}
+
+.Breadcrumb_unlink__shdVn {
+  pointer-events: none;
+}
+
+/* Remove background color from the section */
+.Breadcrumb_section__Em86D {
+  background-color: transparent; 
+}
+
+.Viewthe_Makes_section {
+    /* padding: 20px; */
+   background-color: #F5F5F5;
+  }
+  
+  .Viewthe_Makes_container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .Viewthe_Makes_section_HeaderTitle {
+    text-align: left;
+    font-size: 50px;
+    font-family: 'FuturaPTMedium';
+  }
+  
+  .Showmore_section {
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .Showmore_container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .Showmores_content__xboha {
+    text-align: center;
+  }
+  
+  .makesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+  }
+  
+  .makesItem {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row, adjust gap as needed */
+    background-color: #f4f4f4;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .makesLink {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .makesName {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'FuturaPTNormal';
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .makesRightIcon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .makesName:hover {
+    background-color: #DD1D23;
+    color: white;
+  }
+  
+  .makesName:hover .svgIcon {
+    fill: white;
+  }
+  
+  .svgIcon {
+    width: 12px; /* Adjust size as needed */
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .View_more {
+    margin-top: 20px;
+  }
+  
+  .View_moreBtn {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid #999999;
+    cursor: pointer;
+    justify-content: space-between;
+    gap: 30px;
+}
+  
+.View_moreBtn:hover{
+  background-color:#999999 ;
+  color: #fff;
+}
+  .HomeMakes_moreIcon {
+    margin-left: 10px;
+  }
+  
+  .HomeMakes_moreIcon img {
+    vertical-align: middle;
+  }
+  
+  .arrowIcon {
+    margin-left: 10px;
+  }
+
+  .arrowIconDefault {
+    display: block;
+  }
+  
+  .arrowIconHover {
+    display: none;
+  }
+  .makesItem:hover .arrowIconDefault {
+    display: none;
+  }
+  
+  .makesItem:hover .arrowIconHover {
+    display: block;
+  }
+  
+  .flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* help guide home */
+.Showmore_guide-section {
+  padding: 20px; 
+}
+
+.Showmore_guide-wrapper {
+  max-width: 1300px; 
+  margin: 0 auto;
+  padding: 20px; 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url('/Show More/Help guide img.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.Showmore_guide-main-col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Showmore_guide-column {
+  flex: 1;
+  min-width: 300px; 
+}
+
+.Showmore_chat-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 300px; 
+}
+.Showmore_guide-item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Showmore_guide-content, .guide-info {
+  margin-bottom: 10px;
+}
+
+.Showmore_guide-title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-family: 'FuturaPTMedium';
+}
+
+.Showmore_guide-desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'FuturaPTNormal';
+}
+
+.Showmore_guide-button {
+  display: flex;
+  justify-content: center;
+  font-family: 'FuturaPTMedium';
+  font-size: 16px;
+}
+
+.Showmore_guide-item.align-center {
+  padding-top: 40px;
+}
+
+.Showmore_btn-guide {
+  padding: 10px 100px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Showmore_btn-chat{
+  padding: 10px 80px;
+  background: #DA3B1F;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'FuturaPTMedium';
+  font-size: 16px;
+}
+
+.Showmore_btn-guide:hover {
+  background-color: #fff;
+  color: #da3b1f;
+  border:1px solid #da3b1f;
+
+}
+
+.Showmore_btn-chat:hover{
+  background-color: #DD1D23;
+
+}
+.align-center {
+  text-align: center;
+}
+.Showmore_guide-icon-img {
+  width: 40px; 
+  height: 35px; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .Breadcrumb_navList__Em86D {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  .makesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Viewthe_Makes_section_HeaderTitle {
+    font-size: 40px;
+    padding-left: 20px !important;
+  }
+
+  .Showmore_guide-title {
+    font-size: 35px;
+  }
+
+  .Showmore_btn-guide {
+    padding: 10px 80px;
+  }
+
+  .Showmore_btn-chat {
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Breadcrumb_navList__Em86D {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  .makesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Viewthe_Makes_section_HeaderTitle {
+    font-size: 30px;
+  }
+
+  .Showmore_guide-title {
+    font-size: 30px;
+  }
+
+  .Showmore_btn-guide {
+    padding: 10px 60px;
+  }
+
+  .Showmore_btn-chat {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Breadcrumb_navList__Em86D {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  .makesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Viewthe_Makes_section_HeaderTitle {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .Showmore_guide-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .Showmore_btn-guide, .Showmore_btn-chat {
+    padding: 10px 40px;
+  }
+
+  .Showmore_guide-wrapper {
+    padding: 20px 10px;
+  }
+}
+
+/* Responsive Styles for Screen Width 320px to 430px */
+@media (min-width: 320px) and (max-width: 430px) {
+  .Breadcrumb_navList__Em86D {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  .btn-guide {
+    padding: 10px 95px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+}
+
+

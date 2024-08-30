@@ -1,0 +1,51 @@
+/* styles/CategoryCarousel.module.css */
+.categoryCard {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .categoryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .categoryImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .categoryName {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .viewCategoryButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #DA3B1F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .customArrow {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+  }
+  
+  .prevArrow {
+    left: 10px;
+  }
+  
+  .nextArrow {
+    right: 10px;
+  }
+  

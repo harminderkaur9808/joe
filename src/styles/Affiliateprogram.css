@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Affiliate Program  Page*/
+.affiliate-program_SectionContainer {
+    background-image: url('/Affiliate Program/Affiliate Program Banner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -9;
+  }
+  
+  .affiliate-program_section {
+    max-width: 1300px;
+    margin: 0 auto; 
+  }
+  
+  .affiliate-program_sectionInfo {
+    display: flex;
+    align-items: center;
+    padding: 60px 10px;
+    color: #fff;
+  }
+  
+  .affiliate-program_ourTitle {
+    font-family: 'FuturaPTNormal';
+    font-size: 45px;
+    margin: 0;
+    line-height: normal;
+    text-align: left;
+  }
+  
+  .affiliate-program_ourRedTitle {
+    margin-top: 16px;
+    color: #da3b1f;
+    font-size: 45px;
+    font-family: 'FuturaPTNormal';
+  }
+  
+  .affiliate-program_arrowBox {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .affiliate-program_arrowContainer {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .affiliate-program_arrowImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .affiliate-program_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white; 
+  }
+  
+  .affiliate-program_mainContent {
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+  
+  .affiliate-program_graphicBlock {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    align-self: stretch;
+  }
+  
+  .affiliate-program_promiseImageBox {
+    width: 55%;
+  }
+  
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  .affiliate-program_textContainer {
+    flex: 1 0;
+  }
+  
+  .affiliate-program_titleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  .affiliate-program_title {
+    color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 45px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .affiliate-program_textContent {
+    color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 18px;
+    margin-top: 24px;
+    font-style: normal;
+    line-height: 20px;
+  }
+  
+  .affiliate-program_textContent > p {
+    margin-bottom: 12px;
+  }
+  
+  /* why join section */
+  .why-join-a-premium-section {
+    display: flex;
+    margin-bottom: 80px;
+    gap: 50px;
+    align-self: stretch;
+  }
+  
+  .why-join-a-premium_textContainer {
+    flex: 1 1;
+  }
+  .why-join-a-premium_title {
+    color: #000000;
+    font-family: 'FuturaPTNormal';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    width: 95%;
+  }
+  
+  .why-join-a-premium_textContent {
+    color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 18px;
+    margin-top: 24px;
+    font-style: normal;
+    line-height: 20px;
+  }
+  
+  .why-join-a-premium_textContent > ul {
+    padding-left: 20px;
+  }
+  
+  .why-join-a-premium_textContent > ul li {
+    list-style-type: disc;
+    margin-bottom: 12px;
+  }
+  
+  .why-join-a-premium_promiseImageBox {
+    position: relative;
+    width: 40%;
+  }
+  
+  .why-join-a-premium_promiseImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* sign up and join  section*/
+  .sign-up-and-join-us_section {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 100px;
+    align-self: stretch;
+  }
+  
+  .sign-up-and-join-us_textContainer {
+    flex: 1 1;
+  }
+  
+  .sign-up-and-join-us_titleBox {
+   
+  }
+  .sign-up-and-join-us_title {
+    color: #000000;
+    font-family: 'FuturaPTNormal';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    width: 95%;
+  }
+  
+  .sign-up-and-join-us_textContent {
+    color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 18px;
+    margin-top: 24px;
+    font-style: normal;
+    line-height: 25px;
+  }
+  
+  .sign-up-and-join-us_textContent > ul {
+    padding-left: 20px;
+  }
+  
+  .sign-up-and-join-us_textContent > ul li {
+    list-style-type: disc;
+    margin-bottom: 12px;
+  }
+  
+  .sign-up-and-join-us_promiseImageBox {
+    position: relative;
+    width: 48%;
+  }
+  
+  .sign-up-and-join-us_promiseImage {
+    width: 100%;
+    height: auto;
+  }
+  .sign-up-and-join-us_textContent > p {
+    margin-bottom: 12px;
+  }
+  .sign-up-and-join-us_emailBox {
+    margin-top: 12px;
+  }
+  
+  .sign-up-and-join-us_label {
+    margin-right: 10px;
+    font-family: 'FuturaPTNormal';
+    text-decoration: none;
+  }
+  .sign-up-and-join-us_email, .sign-up-and-join-us_phone {
+    text-decoration: underline;
+  }
+  .sign-up-and-join-us_link {
+    width: fit-content;
+  }
+  a.sign-up-and-join-us_link div{
+    margin-left: 10px;
+  }
+  .sign-up-and-join-us_myButton {
+    display: flex;
+    width: 164px;
+    height: 44px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'FuturaPTNormal';
+    font-size: 20px;
+    border-radius: 4px;
+    background: #000000;
+    margin-top:24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .affiliate-program_title{
+      color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 40px;
+    }
+    .why-join-a-premium_title {
+     font-size: 40px;
+  }
+  .why-join-a-premium_textContent{
+    font-size: 16px;
+  }
+  .sign-up-and-join-us_title {
+    font-family: 'FuturaPTNormal';
+    font-size: 40px;
+}
+.sign-up-and-join-us_textContent{
+  font-size: 16px;
+}
+    .why-join-a-premium-section {
+      margin-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .sign-up-and-join-us_section{
+      padding-left: 20px;
+      padding-right: 20px;
+      gap:50px;
+    }
+    .affiliate-program_graphicBlock {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 80px;
+      align-self: stretch;
+      gap: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .affiliate-program_sectionInfo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+      padding-right: 20px;
+    color: #fff;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 430px){
+  
+    .affiliate-program_mainContent{
+      padding: 15px 0px;
+    }
+    .affiliate-program_ourTitle{
+      font-family: 'FuturaPTNormal';
+      font-size: 45px;
+      margin: 0;
+      line-height: normal;
+      text-align: center;
+    }
+    .affiliate-program_graphicBlock {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 80px;
+      align-self: stretch;
+      flex-direction: column;
+      gap: 20px;
+  }
+  .affiliate-program_promiseImageBox{
+    width: 100%;
+  }
+  .why-join-a-premium-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .why-join-a-premium_promiseImageBox {
+    position: relative;
+    width: 100%;
+  }
+  .affiliate-program_title {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  .affiliate-program_textContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .why-join-a-premium_title {
+  
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+  }
+  .why-join-a-premium_textContent {
+    padding-left: 10px;
+    padding-right: 10px;
+   
+  }
+  .sign-up-and-join-us_section {
+    display: flex;
+   gap: 75px;
+    flex-direction: column;
+  }
+  .sign-up-and-join-us_promiseImageBox {
+    position: relative;
+    width: 100%;
+  }
+  .sign-up-and-join-us_title{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+  }
+  .sign-up-and-join-us_textContent{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  }

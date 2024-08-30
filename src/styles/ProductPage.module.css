@@ -1,0 +1,84 @@
+/* styles/ProductPage.module.css */
+
+.cateSec1 {
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    background-image: url(/images/carousel-bcg.png);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: left;
+    padding: 20px;
+    margin: 40px 0px;
+    height: 385px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.heading {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'FuturaPTHeavy';
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the size of the arrow */
+  color: #000;
+  margin-left: 10px;
+}
+
+.viewMore {
+  background: #DA3B1F;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'FuturaPTMedium';
+}
+.viewMore:hover {
+  background-color: #f24122;
+}
+
+.carouselContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.categoryItem {
+  margin-right: 20px;
+}
+
+.ProductSec1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  background-image: url(/images/Image-BG.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left;
+  padding: 20px;
+  margin: 40px 0px;
+  height: 435px;
+}
+

@@ -1,0 +1,544 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.Blog-page {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    font-family: 'FuturaPTMedium';
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+
+}
+/* Sticky Sidebar */
+.Blog-page__sidebar {
+    width: 20%;
+    padding-right: 20px;
+    border-left: 6px solid #E7E5E8;
+    position: sticky;
+    top: 0;
+    background: #F2F2F2;
+    height: 28vh;
+}
+  
+  /* Sidebar Heading Styles */
+  .Blog-page__heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+    /* padding-left: 10px; */
+    font-family: 'FuturaPTMedium';
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s, border-left-color 0.3s;
+}
+  /* Active Heading Styles */
+
+  
+  .Blog-page__main-content {
+    width: 79%;
+    padding-left: 20px;
+}
+  .Blog-page__heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Blog-page__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  h2.Blog-page__title-Category {
+    background-color: #ffffffeb;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 12px;
+    border-radius: 4px;
+}
+.Blog-page__post {
+  background: white;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Blog-page__post:hover {
+  transform: scale(1.05); /* Scales the element by 5% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for better effect */
+}
+  .Main-blog-sidebar h1 {
+    font-size: 16px;
+}
+/* .Blog-page__sidebar {
+    height: 44%;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    font-size: 16px;
+    padding-left: 8px;
+    border-left-width: 4px;
+    border-left-color: black;
+}
+
+.Blog-page__heading.active {
+    color: black;
+    border-left: 5px solid red;
+    padding-left: 10px;
+} */
+ /* Sidebar Styles */
+
+
+/* Sidebar Heading Styles */
+.Blog-page__heading {
+    font-size: 35px;
+    margin-bottom: 15px;
+    /* padding-left: 10px; */
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s, border-left-color 0.3s;
+    margin-top: 15px;
+    font-family: 'FuturaPTMedium';
+}
+.Main-blog-sidebar h1 {
+    padding-left: 10px;
+    margin-top: 5px;
+
+}
+/* Active Heading Styles */
+.Blog-page__heading.active {
+    color: black;
+    border-left: 5px solid red;
+    position: relative;
+    left: -5px;
+}
+
+/* Banner section */
+section.Blog_Banner {
+    width: 100%;
+    height: 430px;
+    background-image: url('/images/BlogPage/Blog Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: left; /* Center content vertically */
+
+    text-align: left; /* Center text within the section */
+  }
+  
+  .Blog_Banner_topBox {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+  
+  .Blog_Banner_overlayText {
+  font-size: 35px;
+  text-align: left;
+  position: relative;
+  }
+
+  .Blog_Banner_overlayText::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px; /* Adjust the height of the border */
+    background-color: #DD1D23; /* Red color for the border */
+    position: absolute;
+    bottom: -10px; /* Adjust the space between text and border */
+    left: 0;
+  }
+  
+  .Blog_Banner_whiteTextWithBorder {
+    color: white;
+    position: relative;
+  }
+  
+  .Blog_Banner_whiteTextWithBorder::after {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust the width of the border */
+    height: 3px; /* Adjust the height of the border */
+    background-color: #DD1D23; /* Red color for the border */
+    position: absolute;
+    bottom: -5px; /* Adjust the space between text and border */
+    left: 0;
+  }
+  .Blog_Banner_whiteText {
+    color: white;
+  }
+  
+  .Blog_Banner_redText {
+    color: #fff;
+  }
+  
+  .Blog_Banner_paragraph {
+    font-size: 35px;
+    line-height: 1.5;
+    font-family: 'FuturaPTNormal';
+    text-align: left; /* Center text within paragraph */
+  }
+  
+  
+/* Main Content Styles */
+
+/* ************************************************************************ */
+  .Blog-page__image {
+    width: 100%;
+    height: 266px;
+    object-fit: cover;
+  }
+  
+  .Blog-page__title {
+    font-size: 18PX;
+    margin: 15px;
+    font-weight: 500;
+}
+.Blog-page__content {
+  font-size: 15PX;
+  margin: 0 15px 17%;
+  FONT-WEIGHT: 300;
+}
+  
+  .Blog-page__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+  .Blog-page__footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+  .Blog-page__date {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .Blog-page__arrow {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .Blog-page__categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Blog-page__category {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 240px;
+}
+  
+  .Blog-page__category-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .Blog-page__category-name {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  section.Main-Sec-Blog-Page {
+    background-color: white;
+    color: black;
+}
+/*  Categories section second css  */
+
+/* Style the section with full height and background image */
+.Blog-page__section--categories {
+    position: relative; /* For positioning child elements */
+    width: 100%; /* Full width */
+}
+
+/* Style the heading with centered position */
+.Blog-page__heading--categories {
+  
+}
+
+/* Style the category items */
+.Blog-page__category--c3 {
+    position: relative;
+    width: calc(33.333% - 20px);
+    height: 240px;
+    margin: 6px 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure image covers the whole category box */
+.Blog-page__category-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the box */
+    z-index: 1; /* Place image behind text */
+}
+
+/* Style the category name text */
+.Blog-page__category-name--c3 {
+    position: relative; /* Ensure text is positioned above the image */
+    color: white; /* Text color */
+    font-size: 25px; /* Adjust font size */
+    font-weight: bold; /* Text weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: text shadow for better readability */
+    z-index: 2; /* Place text above the image */
+}
+
+
+/* responsive */
+/* For tablets (768px and up) */
+@media (max-width: 1024px) {
+   .Blog_Banner_topBox {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  .Blog-page {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Blog-page__sidebar {
+        z-index: 111;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        border-bottom: none;
+        border-left: none;
+        flex-wrap: nowrap;
+    }
+    .Blog-page__sidebar::-webkit-scrollbar {
+        height: 2px; /* Height of the horizontal scrollbar */
+    }
+    S
+    .Blog-page__sidebar::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+    }
+    
+    .Blog-page__sidebar::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color of the scrollbar thumb on hover */
+    }
+    .Blog-page__heading {
+        font-size: 35px; /* Adjust font size for smaller screens */
+        margin: 10px;
+        flex: 1;
+        text-align: center; /* Center align text */
+        font-family: 'FuturaPTMedium';
+    }
+
+    .Blog-page__main-content {
+        width: 99%;
+        padding: 10px;
+    }
+    .Blog-page__post {
+        width: calc(50% - 10px); /* Two posts per row on tablets */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+    .Blog-page__category--c3 {
+        position: relative;
+        width: calc(50.333% - 20px);
+        height: 240px;
+        margin: 6px 6px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* topbar */
+    .Main-blog-sidebar {
+        display: flex;
+    }
+    /* ************************ */
+    h2.Blog-page__title-Category {
+        background-color: #ffffffeb;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        font-size: 8px;
+    }
+}
+
+/* For mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .Blog_Banner_topBox {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    .Blog-page__sidebar::-webkit-scrollbar {
+        height: 2px; /* Height of the horizontal scrollbar */
+    }
+    
+    .Blog-page__sidebar::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+    }
+    
+    .Blog-page__sidebar::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color of the scrollbar thumb on hover */
+    }
+    .Main-blog-sidebar {
+        z-index: 10; /* Set a reasonable z-index value */
+        position: relative; /* Ensure the z-index takes effect */
+        display: flex;
+        /* Ensure z-index is not overridden by a negative value */
+    }
+
+    /* *************************** */
+    .Blog-page__sidebar {
+        z-index: 111;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        border-bottom: none;
+        border-left: none;
+        flex-wrap: nowrap;
+    }
+
+    .Blog-page__heading {
+        flex: 1 0 auto;
+        font-size: 1.5rem;
+        margin: 10px;
+        white-space: nowrap; /* Prevent text wrapping */
+        text-align: center; /* Center align text */
+    }
+
+    .Blog-page__main-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .Blog-page__post {
+        width: calc(50% - 10px); 
+        box-sizing: border-box; 
+        position: relative;
+    }
+
+    .Blog-page__grid {
+        gap: 10px; /* Reduced gap for mobile view */
+        flex-direction: row; /* Arrange posts in rows */
+        flex-wrap: wrap; /* Allow wrapping */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* categories section */
+    .Blog-page__category--c3 {
+        position: relative;
+        width: 330px;
+        height: 149px;
+        margin: 3px 3px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Blog-page__categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .Blog-page__image {
+        width: 100%;
+        height: 155px;
+        object-fit: cover;
+    }
+    .Blog-page__title {
+        font-size: 10PX;
+        margin: 5px;
+        FONT-WEIGHT: 500;
+        width: 82%;
+    }
+    .Blog-page__content {
+        font-size: 8PX;
+        margin: 0 7px 20%;
+        FONT-WEIGHT: 300;
+    }
+    .Blog-page__footer {
+    
+        padding: 6px;
+       
+    }
+    .Blog-page__arrow {
+        position: absolute;
+        /* font-size: 0.25rem; */
+        /* text-decoration: none; */
+        /* color: #007bff; */
+        position: relative;
+        /* top: -88px; */
+        width: 13px;
+        left: -5px;
+    }
+
+    h2.Blog-page__title-Category {
+        background-color: #ffffffeb;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 480px) {
+  .Blog_Banner_overlayText::after {
+    left: 50px;
+}
+.Blog-page__category-name--c3 {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+  font-family: 'FuturaPTMedium';
+}
+.Blog_Banner_paragraph {
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: 'FuturaPTNormal';
+  text-align: center; /* Center text within paragraph */
+}
+.Blog_Banner_overlayText {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  }
+}

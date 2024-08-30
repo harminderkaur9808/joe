@@ -1,0 +1,78 @@
+.carouselContainer {
+  position: relative;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.productCard {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 10px;
+  position: relative;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+}
+
+.productName {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.starRating {
+  color: #f4c150; /* Gold star color */
+  font-size: 14px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.regularPrice {
+  font-size: 14px;
+  color: #888;
+}
+
+.salePrice {
+  font-size: 14px;
+  color: red;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.viewDetailButton {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #DA3B1F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,465 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Main-Member-IC{
+    background-color: white;
+}
+body {
+    background-color: #fff; 
+    margin: 0; 
+    font-family: 'FuturaPTMedium'; 
+}
+.breadcrumb-nav-list {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    color: #fff;
+ 
+}
+.breadcrumb-line-title {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+}
+.breadcrumb-link {
+    color: #000;
+    text-decoration: none; 
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.breadcrumb-link:hover {
+    color: #DD1D23; 
+    border-bottom: 2px solid #DD1D23; 
+}
+.breadcrumb-slash {
+    margin: 0 5px;
+    color: #000;
+}
+
+/* Container for the Member System Rules section */
+.rule_memberSystemRuleBox__zx5OV {
+  /* margin-top: 30px;  */
+    padding: 20px;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.Member_System_container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Heading styling */
+.Member_System_container h1 {
+    font-family: 'FuturaPTMedium', sans-serif;
+    font-size: 32px;
+    color: #000;
+}
+
+/* Main container styling */
+/* .rule_memberSystemRuleBox__zx5OV .rule_main {
+    display: flex;
+    position: relative;
+} */
+
+/* Styling for the left selection box */
+.rule_memberSystemRuleBox__zx5OV .rule_leftSelect {
+    position: sticky; 
+    top: 110; 
+    /* width: 175px; */
+    padding: 20px; 
+    background: #fff;
+    z-index: 1000; 
+}
+
+/* Container for each anchor link in the left selection box */
+.rule_memberSystemRuleBox__zx5OV .rule_leftSelect .rule_pcRulerOption {
+    display: flex;
+    flex-direction: column; 
+    /* gap: 16px;  */
+}
+/* Anchor wrapper styling */
+.ant-anchor-wrapper {
+    max-height: auto; 
+}
+
+/* Anchor link styling */
+/* .ant-anchor-link {
+    display: block;
+    padding: 8px 14px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+} */
+
+/* Active link styling */
+.ant-anchor-link {
+    border: 1px solid transparent; /* Initial border color (transparent) */
+}
+
+.ant-anchor-link-title {
+    display: block;
+    padding: 10px;
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* Anchor ink ball styling */
+.ant-anchor-ink {
+    display: none; 
+}
+
+
+/* .rule_memberSystemRuleBox__zx5OV .rule_main__axAJn .rule_rightContent__JPLYj {
+    flex: 1 1 0%;
+} */
+/*  */
+.Member-PolicyPage_content {
+    color: rgb(51, 51, 51);
+}
+.Member-PolicyPage_content h2 {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'FuturaPTMedium'; 
+    color: rgb(26, 26, 26);
+    text-align: left;
+}
+.Member-PolicyPage_content h3 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: 'FuturaPTMedium';
+    margin-bottom: 10px;
+    color: #000;
+}
+.Member-PolicyPage_content p, .MemberRulePage_content span {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: 'FuturaPTNormal';
+    color: #333333;
+}
+
+.Member-PolicyPage_content h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'FuturaPTMedium';
+    color: #000;
+}
+.Member-PolicyPage_content span {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+    font-family: 'FuturaPTNormal';
+    font-size: 16px;
+}
+.Member-PolicyPage_content table {
+    margin-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+.Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW {
+    display: flex;
+}
+.Member-PolicyPage_content tr {
+    height: auto;
+    min-height: 42px;
+    display: flex;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    font-family: 'FuturaPTMedium';
+}
+.Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW td {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    padding: 0px;
+    border: unset;
+}
+.MemberRulePage_content tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: auto;
+
+}
+.Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW td span:first-child {
+    height: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+}
+.Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW td span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229) transparent rgb(229, 229, 229) rgb(229, 229, 229);
+    border-image: initial;
+    font-size: 14px;
+    font-family: FuturaPTBook;
+    color: rgb(51, 51, 51);
+}
+.Member-PolicyPage_content tr td span {
+    width: 100px;
+    text-align: center;
+    margin: 0px;
+    font-family: 'FuturaPTMedium';
+    color: #fff;
+}
+
+span.Headtable01 {
+    color: #000 !important;
+}
+.Member-PolicyPage_content table {
+    margin-bottom: 10px;
+}
+.false img {
+    width: 40%;
+}
+
+.Member-PolicyPage_content tr {
+    height: auto;
+    min-height: 42px;
+    display: flex;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    font-family: FuturaPTBook;
+}
+.Member-PolicyPage_content .Member-PolicyPage_black_Bg_Tr__QWRcu td {
+    background-color: rgb(51, 51, 51);
+    color: #fff !important;
+}
+.Member-PolicyPage_content tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: auto;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    border-left: 1px solid rgb(229, 229, 229);
+    border-right: 1px solid rgb(229, 229, 229) !important;
+    border-image: initial;
+    border-top: none;
+    border-right: none;
+    font-family: 'FuturaPTMedium';
+}
+@media (max-width: 1024px) {
+div#ruleMain {
+    width: 90% !important;
+}
+
+.Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+@media (max-width: 820px) {
+.Member-PolicyPage_content table {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+}
+/* Mobile and Tablet responsive styles */
+@media (max-width: 768px) {
+    .breadcrumb-nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .breadcrumb-line-title {
+        margin: 5px 0;
+    }
+
+    .Member_System_container {
+        padding: 10px;
+    }
+
+    .rule_main {
+        flex-direction: column;
+    }
+
+    .rule_leftSelect {
+        width: 100%;
+        position: static;
+    }
+
+    .rule_rightContent__JPLYj {
+        margin-left: 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    h1, h2, h3, h4, p {
+        font-size: 16px;
+    }
+    .Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW{
+        flex-wrap: wrap;
+    }
+
+    .rule_memberSystemRuleBox__zx5OV {
+        display: flex;
+        flex-direction: column;
+    }
+    .Member-PolicyPage_content tr {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 480px) {
+    .breadcrumb-nav-list {
+        flex-direction: column;
+    }
+
+    .breadcrumb-line-title {
+        font-size: 14px;
+    }
+
+    .Member_System_container {
+        padding: 5px;
+    }
+    .Member-PolicyPage_content .Member-PolicyPage_specialTr__avnPW{
+        flex-wrap: wrap;
+    }
+
+    .rule_main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rule_leftSelect {
+        width: 100%;
+    }
+
+    .rule_rightContent__JPLYj {
+        margin-left: 0;
+        padding-right: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    h1, h2, h3, h4, p {
+        font-size: 14px;
+    }
+    
+    .Member-PolicyPage_content tr {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+}
+
+/* sticky ************ */
+.rule_main {
+    position: relative; 
+}
+
+.rule_leftSelect {
+    position: sticky; /* Make the element sticky */
+    top: 0; 
+   
+}
+
+.rule_pcRulerOption {
+    width: 175px;
+   
+}
+
+.ant-anchor-wrapper {
+    max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.ant-anchor {
+    position: relative; 
+}
+
+.ant-anchor-link {
+}
+
+.ant-anchor-link-title {
+    display: block; 
+    text-decoration: none;
+    color: #000; 
+    font-family: 'Khula-Regular';
+}
+
+.ant-anchor-link.rule_activer .ant-anchor-link-title {
+    font-weight: bold; /* Highlight active link */
+}
+
+
+/* ********************** */
+/* Add border to active section */
+
+
+
+ /* .active-heading {
+    margin-left: -10px; 
+    background: white; 
+}
+
+h2 {
+    margin-top: 50px; 
+}
+
+.active-heading {
+    color: red;
+    border-left: 1px solid blue;
+    padding-left: 10px;
+    background: white;
+}  */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Anchor Links */
+  .rule_anchorLink a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .rule_anchorLink.active-heading a {
+    color: #4D1DDD;
+    /* font-weight: bold; */
+    border: 1px solid #4D1DDD;
+    font-family: 'Khula-Regular';
+  }
+
+
+
+
+  .section-heading{
+    /* width: 200px; */
+    text-align: center;
+  }
+  a.ant-anchor-link-title {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10;
+    margin-bottom: 10;
+    font-family: 'Khula-Regular';
+    font-size: 15px;
+
+}

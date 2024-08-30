@@ -1,0 +1,438 @@
+/* styles/HelpCenter.css */
+
+.p {
+    font-family: sans-serif;
+}
+/* .main-logo {
+    width: 39px;
+    height: 32px;
+} */
+
+
+.contact-details-images{
+display: flex;
+}
+.Helpcontainer {
+    /* background-color: white; */
+}
+.hero {
+    width: 100%;
+    height: 300px;
+    background: url(../../public/images/help-center/Helpcenterimg.png) no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    width: 80%;
+}
+
+.hero-textMain {
+    padding-left: 30%;
+    background-color: white;
+    padding-left: 13rem;
+    border-radius: 0px 100px 100px 0px;
+    width: 40%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-family:'FuturaPTNormal';
+}
+
+.hero h2 {
+    margin: 0;
+    color: #DD1D23;
+    font-size: 45px;
+    display: flex;
+    padding-left: 13rem;
+    font-family: 'FuturaPTMedium';
+}
+
+.hero p {
+    color: black;
+    display: flex;
+    font-size: 22px;
+    font-family: 'FuturaPTNormal';
+    text-align: left;
+}
+
+.contact-info {
+    width: 71%;
+    margin: -39px auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    width: 39%;
+    color: black;
+    padding: 12px;
+    font-family: 'FuturaPTNormal';
+    font-size: 22px;
+}
+
+.contact-details h3 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    font-family: 'FuturaPTMedium';
+    color: #DD1D23;
+}
+
+.contact-details p,
+.contact-details ul {
+    margin: 0.5rem 0;
+    font-size: 22px;
+    font-family: 'FuturaPTNormal';
+}
+
+
+
+.contact-form {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    color: black;
+    display: block;
+    margin-bottom: 0.5rem;
+   font-size: 22px;
+    font-family: 'FuturaPTNormal';
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    background-color: #F4F4F4;
+    color: black;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #f1e3e3;
+    border-radius: 4px;
+}
+
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+    border-color: red;
+}
+/* Apply focus styles to email input */
+input[type="email"]:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Apply focus styles to textarea */
+textarea:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Apply focus styles to select dropdown */
+select:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Apply focus styles to file input */
+input[type="file"]:focus {
+    border-color: blue;
+    outline: none;
+}
+#feedbackCategory {
+    padding: 10px;
+}
+option {
+    font-family: sans-serif;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.file-input {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .file-input label {
+    display: none;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+  .upload-area {
+    border: 1px dashed #d6d7d8;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    color: #262728;
+    font-family: FuturaPTMedium, Helvetica Neue;
+    font-size: 14px;
+    line-height: normal;
+    cursor: pointer;
+    height: 148px;
+}
+  
+  .upload-desc {
+    text-align: center;
+  }
+  
+  .choose-text {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .file-input-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file-name {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    font-family: sans-serif;
+  }
+
+  .submit-button {
+    padding: 0.75rem;
+    background-color:#DD1D23;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    width: 40%;
+    font-size: 22px;
+    font-family: 'FuturaPTNormal';
+}
+
+.submit-button:hover {
+    background-color: darkred;
+}
+
+/* Fq */
+
+.Faq-text {
+    color: black;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+.Faq-text h2 {
+    font-weight: 800;
+    font-size: 24px;
+    border-left: 6px solid red; /* Only left border with red color and 4px width */
+    border-top: none;    /* Remove any top border */
+    border-right: none;  /* Remove any right border */
+    border-bottom: none; /* Remove any bottom border */
+    padding-left: 4px;
+    margin-top: 55px;
+}
+
+/* /////// */
+/* Style the select element */
+
+img.main-logo-123 {
+    width: 30;
+    height: 30px;
+    position: relative;
+    left: 30%;
+    bottom: 10px;
+}
+
+
+select#feedbackCategory {
+    font-family: sans-serif;
+}
+
+@media only screen and (min-width:768px) and (max-width:1080px) {
+
+    .hero-textMain {
+        padding-left: 30%;
+        background-color: white;
+        padding-left: 68px;
+        border-radius: 0px 100px 100px 0px;
+        width: 65%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        font-family: sans-serif;
+    }
+    .contact-details {
+        width: 40%;
+        color: black;
+        padding: 12px;
+        font-family: 'FuturaPTNormal';
+        font-size: 17px;
+    }
+    .contact-details p, .contact-details ul {
+        margin: 0.5rem 0;
+        font-size: 17px;
+        font-family: 'FuturaPTNormal';
+    }
+    .form-group label {
+        color: black;
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+        font-family: 'FuturaPTNormal';
+    }
+    .submit-button {
+        padding: 0.75rem;
+        background-color:#DD1D23;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 400;
+        width: 40%;
+        font-size: 22px;
+        font-family: 'FuturaPTNormal';
+    }
+    .hero h2 {
+        margin: 0;
+        color: #DD1D23;
+        font-size: 45px;
+        display: flex;
+        padding-left: 68px;
+        font-family: 'FuturaPTMedium';
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .hero-textMain {
+        width: 73%;
+        /* padding-top: 0.6rem; */
+        /* padding-bottom: 0.6rem; */
+        font-family: 'FuturaPTNormal';
+    }
+    .contact-details p, .contact-details ul {
+        margin: 0.5rem 0;
+        font-size: 15px;
+        font-family: 'FuturaPTNormal';
+    }
+    .contact-details h3 {
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        color: black;
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 11px;
+        font-family: 'FuturaPTNormal';
+    }
+    .submit-button {
+        padding: 0.75rem;
+        background-color: #DD1D23;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 400;
+        width: 40%;
+        font-size: 22px;
+        font-family: 'FuturaPTNormal';
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+.contact-info {
+    width: 85%;
+    margin: -39px auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 430px){
+.contact-info {
+    width: 85%;
+    margin: -39px auto 0;
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.hero {
+    width: 100%;
+    height: 445px;
+    
+}
+
+
+.hero-textMain {
+    padding-left: 90px;
+    background-color: white;
+    border-radius: 0px 100px 100px 0px;
+    width: 100%;
+    font-family: 'FuturaPTNormal';
+}
+.hero h2 {
+    margin: 0;
+    color: #DD1D23;
+    font-size: 40px;
+    display: flex;
+    padding-left: 90px;
+    font-family: 'FuturaPTMedium';
+    text-align: center;
+}
+.hero p {
+    color: black;
+    display: flex;
+    font-size: 16px;
+    font-family: 'FuturaPTNormal';
+    text-align: left;
+}
+.contact-details {
+    width: 100%;
+    color: black;
+    padding: 12px;
+    font-family: 'FuturaPTNormal';
+    font-size: 22px;
+}
+}
+
+
+

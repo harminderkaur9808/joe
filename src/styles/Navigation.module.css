@@ -1,0 +1,93 @@
+/* styles/Navigation.module.css */
+.header-menus-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin: 0 10px;
+}
+
+.nav-bg-div {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.nav-tabs ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-tabs ul li {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.nav-tabs ul li.active {
+    background-color: #333;
+    color: white;
+}
+
+.nav-tabs-content {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Adjustments for carousel controls */
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons are above carousel */
+}
+
+.carousel-control {
+    background: #fff; /* Button background color */
+    border: 1px solid #ddd; /* Button border color */
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.carousel-control.prev {
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+.carousel-control.next {
+    margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+/* Ensure specific styles are applied to react-multi-carousel */
+.react-multi-carousel-item {
+    margin: 0 10px; /* Adjust item spacing */
+}
+
+/* Ensure compatibility with react-multi-carousel */
+.react-multi-carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Override default react-multi-carousel styles if necessary */
+.react-multi-carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

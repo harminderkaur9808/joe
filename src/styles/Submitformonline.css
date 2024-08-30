@@ -1,0 +1,232 @@
+/* styles/HelpCenter.css */
+
+/* General styles */
+
+#Main-submit-section-01 {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
+}
+section#Body-submit-section-01 {
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+
+}
+/* main heading */
+.Main-submit-h1 h1{
+    color: #000000;
+    font-family: 'FuturaPTMedium';
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.Main-submit-p2 {
+  font-size: 18px;
+  font-family: 'FuturaPTNormal';
+  color: #000;
+}
+text.Main-submit-p2 {
+    color: black;
+    font-size: 18px;
+    font-family: 'FuturaPTNormal';
+    /* padding-bottom: 33px; */
+}
+.Main-submit-h1 {
+    margin-bottom: 20px;
+}
+/* ............. */
+p {
+    font-family:'FuturaPTNormal';
+  }
+  
+  .contact-form {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group label {
+    color: black;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'FuturaPTNormal';
+    font-size: 22px;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    background-color: #F4F4F4;
+    color: black;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #f1e3e3;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group input.error,
+  .form-group textarea.error,
+  .form-group select.error {
+    border-color: #DD1D23;
+  }
+  
+  input[type="email"]:focus,
+  textarea:focus,
+  select:focus,
+  input[type="file"]:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .file-input {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .file-input label {
+    display: none;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+  .upload-area {
+    border: 1px dashed #d6d7d8;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    color: #262728;
+    font-family: 'FuturaPTNormal';
+    font-size: 14px;
+    line-height: normal;
+    cursor: pointer;
+    height: 148px;
+  }
+  
+  .upload-desc {
+    text-align: center;
+  }
+  
+  .file-input-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file-name {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    font-family: 'FuturaPTNormal';
+  }
+  
+  .submit-button {
+    padding: 12px 16px;
+    background-color: #DD1D23;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    width: 14%;
+    font-size: 22px;
+    font-family: 'FuturaPTMedium';
+}
+  
+  .submit-button:hover {
+    background-color: darkred;
+  }
+  
+  img.main-logo-123 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 30%;
+    bottom: 10px;
+  }
+  .contact-form {
+    /* height: 63%; */
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    box-shadow: -1px 1px 12px #adadad3d;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+#Main-submit-section-01 {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+  #Main-submit-section-01 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .Main-submit-h1 h1 {
+    color: #000000;
+    font-family: 'FuturaPTMedium';
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form-group label {
+  font-family: 'FuturaPTNormal';
+  font-size: 18px;
+}
+.submit-button {
+  padding: 12px 16px;
+  background-color: #DD1D23;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  width: 40%;
+  font-size: 22px;
+  font-family: 'FuturaPTMedium';
+}
+}

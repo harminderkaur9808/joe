@@ -1,0 +1,51 @@
+/* Default styles for larger screens */
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .Main-section-Navigations {
+        display: none;
+    }
+
+    .HomeBlogsBox_articleContent {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 14%;
+    }
+}
+/* Styles for tablets (iPad) and smaller devices */
+/* Default styles for larger screens */
+
+/* Styles for iPads and similar devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Main-section-Navigations {
+        display: none;
+    }
+}
+.SafetyConsiderations_Content {
+    margin-top: 16px;
+    font-size: 1em;
+    line-height: 29px;
+    color: #666;
+    margin-bottom: 13%;
+}
+
+.HomeBlogsBox_bottom {
+}
+
+.HomeBlogsBox_blogsItem{
+    position: relative;
+
+}
+
+.HomeBlogsBox_bottom {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    color: #000;
+    bottom: 0px;
+    width: 100%;
+}

@@ -1,0 +1,480 @@
+/* General styling for the page */
+.Main-Track-Page {
+    background-color: #FAFAFA;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Container for the track order page */
+.mainTrackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for the title */
+.title-track-order {
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    /* width: 100%; */
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'FuturaPTMedium';
+}
+
+/* Styling for the subtitle */
+.subtitle {
+    text-align: center;
+    margin-bottom: 22px;
+  font-family: 'Khula-Regular';
+  font-size: 21px;
+  color: #000;
+}
+
+/* Form container styling */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Label styling */
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'FuturaPTNormal';
+}
+
+/* Input field styling */
+.input {
+    background-color: #93929200;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Khula-Regular';
+}
+
+/* Placeholder styling */
+.input::placeholder {
+    color: #B0B0B0;
+}
+
+/* Input field focus styling */
+.input:focus {
+    border-color: #D9D9D9;
+    outline: none;
+}
+
+/* Error state for input fields */
+.input-error {
+    border-color: red;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Track button styling */
+.trackButton {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #DA3B1F;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Track button hover state */
+.trackButton:hover {
+    background-color: #C63A1E;
+}
+
+.orContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    width: 55%;
+}
+
+.orText {
+    position: relative;
+    padding: 0 10px; /* Space between text and lines */
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* Text color */
+}
+
+/* Add horizontal lines before and after the "Or" text */
+.orContainer::before,
+.orContainer::after {
+    content: "";
+    flex: 1; /* Takes up remaining space */
+    border-top: 1px solid #DADADA; /* Line color and thickness */
+    margin: 0 10px; /* Space between the lines and the text */
+}
+
+.orContainer::before {
+    margin-right: 10px;
+}
+
+.orContainer::after {
+    margin-left: 10px;
+}
+
+/*******************/
+
+/* Authentication buttons container styling */
+.orContainer-After-buttons {
+    width: 60%;
+}
+.MainChat-support-F1 {
+   
+    width: 40%;
+}
+.authButtons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Authentication button styling */
+.authButton {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0070f3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.authButtons .authButton:nth-of-type(2) {
+    background-color: #262728;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.authButtons .authButton:nth-of-type(2):hover {
+    border: 1px solid red;
+    background-color: transparent;
+    color: black;
+}
+.authButtons .authButton:nth-of-type(1) {
+    border: 1px solid #D6D7D8;
+    background-color: transparent;
+    color: black;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+}
+.authButtons .authButton:nth-of-type(1):hover {
+    border: 1px solid red;
+    background-color: transparent;
+    color: red;
+}
+
+/* Authentication button hover state */
+.authButton:hover {
+    background-color: #005bb5;
+}
+
+/* Information text styling */
+.infoText {
+    font-size: 17px;
+    width: 55%;
+    text-align: start;
+    margin-top: 20px;
+    font-family: 'FuturaPTNormal';
+    color: #5C5D5E;
+}
+
+/* FAQ SECTION ************************************************************************************************* */
+.faq-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+section.faq-s1-Main {
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+section.faq-s1-Main-M2 {
+    margin-top: 13px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+.faq-title {
+    border-left: 8px solid red;
+    align-self: flex-start;
+    width: 68%;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin: auto;
+    font-family: 'FuturaPTMedium';
+}
+
+.faq-container {
+    width: 68%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: #D6D7D8 solid 1px;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'FuturaPTNormal';
+}
+
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.arrow.down {
+    transform: rotate(0deg);
+}
+
+.arrow.up {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 10px 0;
+    font-size: 15px;
+    font-family: 'FuturaPTNormal';
+}
+
+/* Faq Chat Support Button */
+section.Faq-Chat-S-Button {
+    width: 67%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'FuturaPTNormal';
+    color: #262728;
+}
+
+.MainChat-support-F1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262728;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 4px;
+}
+
+.chat-text {
+    flex: 1;
+    text-align: left;
+}
+
+.chat-button {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 2px 0px;
+}
+
+.chat-button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+}
+
+.chat-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 8px;
+}
+
+.Track-recent-slider {
+    width: 84%;
+    margin: auto;
+    padding: 21px 0px;
+}
+
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 768px) {
+
+    .orContainer-After-buttons {
+width: 90%;
+    }
+    .MainChat-support-F1 {
+        width: 100%;
+    }
+    .title-track-order {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .formContainer {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .input {
+        padding: 8px;
+    }
+
+    .trackButton {
+        font-size: 14px;
+    }
+
+    .orContainer {
+        width: 96%;
+    }
+
+    .orText {
+        font-size: 14px;
+    }
+
+    .authButtons {
+        /* flex-direction: column; */
+        width: 100%;
+        display: flex;
+    }
+
+    .authButton {
+        width: 100%;
+        /* margin: 5px 0; */
+    }
+
+    .infoText {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+    .chat-button {
+        font-size: 12px;
+    }
+
+    .Track-recent-slider {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-track-order {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .input {
+        padding: 6px;
+    }
+
+    .trackButton {
+        font-size: 12px;
+    }
+
+    .orText {
+        font-size: 12px;
+    }
+
+    .authButton {
+        font-size: 14px;
+    }
+
+    .infoText {
+        font-size: 13px;
+    }
+
+    .faq-title {
+        font-size: 18px;
+        width: 97%;
+    }
+
+    .chat-button {
+        font-size: 10px;
+    }
+    section.Faq-Chat-S-Button {
+        width: 89%;
+        margin: auto;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+
+
+    .orContainer-After-buttons {
+        /* width: 59%; */
+    }
+    .faq-container {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .faq-title {
+        border-left: 8px solid red;
+        align-self: flex-start;
+        width: 95%;
+    }
+    .Track-recent-slider {
+        width: 101%;
+        margin: auto;
+        padding: 21px 0px;
+    }
+    section.Faq-Chat-S-Button {
+        width: 92%;
+    }
+}

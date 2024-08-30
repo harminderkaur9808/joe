@@ -1,0 +1,15 @@
+/* styles/StarRating.module.css */
+.starRating {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  }
+  
+  .filledStar {
+    color: gold;
+  }
+  
+  .emptyStar {
+    color: #e0e0e0;
+  }
+  

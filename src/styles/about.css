@@ -1,0 +1,423 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* About Us page */
+.about_topBox {
+    width: 100%;
+    height: 430px;
+    background-image: url('/About us/About Background img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* CSS for input fields with focus state */
+.input-group input:focus {
+  border-color: black; /* Set border color to black when focused */
+  outline: none; /* Remove default outline for better visual consistency */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for better focus indication */
+}
+
+/* Optional: CSS for error state to ensure focus styles are visible */
+.input-group input.error:focus {
+  border-color: red; /* Set border color to red for error state (example) */
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2); /* Optional: shadow for error state */
+}
+
+
+  .expectMoreContainer {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px; 
+  }
+  .overlayText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .heading {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: 'FuturaPTHeavy';
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  .whiteText {
+    color: white;
+  }
+  .redText {
+    color: #DD1D23;
+    padding-right: 45px;
+  }
+  .paragraph {
+    font-size: 20px;
+      line-height: 1.5;
+      font-family: 'FuturaPTNormal';
+      text-align: left;
+     
+  }
+  /* Our promise sec */
+  .OurPromise_section {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust as needed */
+    max-width: 1052px;
+    border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: -150px; /* Ensure no additional space on top */
+    margin-bottom: 20px; 
+  }
+  .OurPromise_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .OurPromise_ourLabel {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'FuturaPTMedium';
+  }
+  
+  .OurPromise_ourTitle {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #DD1D23;
+    font-family: 'FuturaPTHeavy';
+  
+  }
+  
+  .OurPromise_ourValue {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'FuturaPTNormal';
+  }
+  
+  /* Our purpose sec */
+  .OurPurpose_section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    padding-top: 45px; 
+    padding-bottom: 20px; 
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .OurPurpose_container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .OurPurpose_left {
+    flex: 1;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .OurPurpose_ourLabel {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'FuturaPTMedium';
+  }
+  
+  .OurPurpose_ourTitle {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #DD1D23;
+    font-family: 'FuturaPTHeavy';
+  }
+  
+  .OurPurpose_ourValue {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'FuturaPTNormal';
+  }
+  
+  .OurPurpose_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .OurPurpose_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  /* our road sec */
+  .OurRoadToYou_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; 
+    background-color: #fff;
+  }
+  .OurRoadToYou_container {
+    max-width: 1100px; /* Set max width */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .OurRoadToYou_ourLabel {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'FuturaPTMedium';
+  }
+  .OurRoadToYou_ourTitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #DD1D23;
+    font-family: 'FuturaPTHeavy';
+  }
+  
+  .OurRoadToYou_ourValue {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'FuturaPTNormal';
+  }
+  
+  section.Our-road_section {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .Our-road_backgroundImageContainer {
+    height: 400px;
+    background-image: url('/About us/Our Road.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    max-width: 1300px;
+    border-radius: 12px;
+  }
+  .Our-road_overlayText {
+    font-family: 'FuturaPTNormal';
+    font-size: 20px;
+    width: 50%;
+    padding-left: 50px;
+  }
+  .Our-road_Text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'FuturaPTNormal';
+  }
+  .SparashV_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    background-color: #fff;
+  }
+  .SparashV_Container_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SparashV_Container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .SparashV_Container_pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .SparashV_Container_Image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .SparashV_Container_text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'FuturaPTNormal';
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* For tablets */
+  @media (max-width: 1024px) {
+    .OurPromise_section {
+      top: -100px;
+    }
+  .overlayText {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      gap: 20px;
+  }
+  
+    .OurPurpose_container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .OurRoadToYou_section {
+      padding: 30px 15px;
+    }
+    .OurPromise_section {
+      width: 90%;
+      max-width: 1052px;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+  } 
+  /* For small tablets and large mobile devices */
+  @media (max-width: 768px) {
+    .OurPromise_section {
+      top: -70px;
+    }
+  
+    .heading {
+      font-size: 50px;
+    }
+  
+    .OurPurpose_container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .OurRoadToYou_section {
+      padding: 30px 10px;
+    }
+  }
+  @media (max-width: 430px){
+  .OurPurpose_left {
+    flex: 1;
+    padding-top: 20px;
+    padding-left:0px !important;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  @media (min-width: 320px) and (max-width: 430px){
+  .expectMoreContainer {
+      max-width: 1300px;
+      width: 100%;
+  /* display: flex; */
+   /* align-items: center; */
+      text-align: center;
+      padding-bottom: 20px;
+  }
+  
+    .redText {
+      color: #DD1D23;
+      padding-right: 0px !important;
+  }
+    .OurPromise_section {
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 1052px;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-top: 46px;
+      margin-bottom: 20px;
+  }
+    .OurPromise_section {
+      top: -50px;
+    }
+  
+    .heading {
+      font-size: 55px;
+    }
+    .paragraph {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .OurPurpose_section {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .OurPurpose_container {
+      gap: 10px;
+    }
+  
+    .Our-road_backgroundImageContainer {
+      height: 300px;
+      padding: 10px;
+    }
+    .Our-road_overlayText {
+      font-size: 16px;
+      padding-left: 0px !important;
+      width: 100%;
+      text-align: center;
+    }
+    .Our-road_Text {
+      font-size: 15px;
+    }
+   
+    .OurPromise_section {
+      margin-top: 30px;
+      width: 90%;
+    }
+    .OurRoadToYou_container {
+      padding: 10px;
+    }
+    .Our-road_backgroundImageContainer {
+      height: 250px;
+    }
+    .overlayText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* padding-right: 20px; */
+      gap: 20px;
+      text-align: center;
+      margin: auto;
+  }
+  }
+  
+  @media (max-width: 320px){
+    .overlayText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 20px;
+     padding-right: 20px; 
+      gap: 20px;
+  }
+  }

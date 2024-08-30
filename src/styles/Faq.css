@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @font-face {
+    font-family: 'FuturaBT Book';
+    src: url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/FuturaBT-Bold.woff2') format('woff2'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/FuturaBT-Bold.woff') format('woff'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/FuturaBT-Bold.ttf') format('truetype'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/FuturaBT-Bold.svg') format('svg');
+        font-weight: 400;
+        font-style: normal;
+}
+
+
+
+/* faq.css */
+.banner {
+  position: relative;
+  width: 100%;
+  /* height: 336px;  */
+  z-index: -9;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .banner div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+} */
+
+.banner h1 {
+  font-size: 2.5rem; /* Equivalent to text-4xl */
+  font-weight: 700;
+}
+
+.banner p {
+  margin-top: 0.5rem; /* Equivalent to mt-2 */
+}
+
+.mt-2 {
+  margin-top: 0rem;
+}
+
+nav.navigation {
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Futura PT', sans-serif; /* Updated font */
+  color: black;
+  position: relative;
+}
+
+.tab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #DD1D23;
+  transform: scaleX(0); /* Start with scaleX of 0 */
+  transform-origin: left; /* Scale from the left side */
+  transition: transform 0.6s ease-out; /* Smooth transition */
+}
+
+.tab.active::after {
+  transform: scaleX(1); /* Expand to full width */
+}
+
+.tab.active {
+  font-weight: 700;
+  color: #DD1D23;
+}
+
+.faq-item {
+  border: 1px solid #e5e7eb; /* Equivalent to border-gray-200 */
+  padding: 1rem; /* Equivalent to p-4 */
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+}
+
+.question-heading {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #262728;
+}
+
+.transition-max-height {
+  overflow: hidden;
+}
+
+.max-h-0 {
+  max-height: 0;
+}
+
+.max-h-screen {
+  max-height: 1000px; /* Large value to ensure it shows fully */
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  /* Tab bar styling */
+  .tabs {
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of tabs */
+    display: flex; /* Flex container for horizontal scrolling */
+    justify-content: flex-start; 
+    margin-bottom: 1.5rem; 
+    position: sticky;
+    top: 0; 
+    background-color: white; 
+    z-index: 10;
+    padding: 0 1rem; 
+    border-bottom: 1px solid #e5e7eb; 
+  }
+
+  .tab {
+    display: inline-block; 
+    text-align: center; 
+    padding: 0.5rem 1rem; 
+  }
+
+/* ************ */
+/* first  */
+
+.banner div h1 {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+
+  
+  font-size: 32px;
+}
+.banner p {
+  
+  font-size: 16px;
+}
+
+
+.lang-trans-div {
+  display: none;
+}
+.address-div {
+  display: none;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 40px;
+  display: none;
+}
+
+.right-side {
+  display: flex;
+  gap: 20px;
+  display: none;
+}
+
+h1.text-4xl.font-bold.text-white {
+  font-size: 30px !important;
+  font-family: 'FuturaPTNormal';
+  font-weight: 800;
+}
+
+p.mt-2.text-white {
+  font-size: 20px !important;;
+  font-family: 'FuturaPTNormal';
+
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 216px;
+  z-index: -9;
+}
+
+
+/* /////// */
+
+}
+
+
+/* //////////--End-Mobile-Responsive---//////// */
+
+
+/* ////////----Tab-view---///////////// */
+
+
+@media only screen and (min-width:768px) and (max-width:1080px) {
+
+.text-center {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  /* height: 336px; */
+  z-index: -9;
+  height: 290px;
+}
+button.tab {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px !important;
+}
+
+/* ////// */
+}
+
+/* ///////---End-Tab-View--////////////// */
+
+
+
+.question-heading {
+  font-family: 'FuturaPTNormal';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+}
+
+.transition-max-height {
+  overflow: hidden;
+  transition: 0.7s cubic-bezier(1, -0.11, 0.58, 1);
+}
+
+p.mt-2.text-white {
+  font-size: 30px;
+  font-family: 'FuturaPTNormal';
+    font-weight: 100;
+  }
+
+h1.text-4xl.font-bold.text-white {
+  font-size: 50px;
+  font-weight: 400;
+    font-family: 'FuturaPTNormal';
+}
+
+.transition-max-height {
+  overflow: hidden;
+  transition: 0.7s cubic-bezier(1, -0.11, 0.58, 1);
+  font-family: 'FuturaPTNormal';
+  font-size: 13px;
+}
+
+.tab.active {
+  font-weight: 400;
+  color: #DD1D23;
+  font-family: 'FuturaPTNormal';
+}
+
+.tab::after {
+  content: unset;
+
+}
+button.tab {
+  font-family: 'FuturaPTNormal';
+  font-size: 22px;
+}
+
+.max-w-7xl.mx-auto.p-4 {
+  padding: 1rem;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
